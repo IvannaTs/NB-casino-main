@@ -1,0 +1,86 @@
+.faq {
+    color: $white;
+
+    .acordeon {
+        
+        .acordeon-header {
+            @include Roboto-bold;
+            line-height: 120%;
+            color: $white;
+            text-transform: uppercase;
+            padding: 13px 30px;
+            cursor: pointer;
+            background: $orange;
+            border-radius: 100px;
+            margin-bottom: 15px;
+        }
+
+        .acordeon-header::first-letter {
+            padding-right: 10px;
+        }
+
+        .acordeon-body {
+            display: none;
+            padding: 0 0 15px 60px;
+        }
+        .acordeon-body:last-child {
+            padding-bottom: 0;
+        }
+
+        .acordeon-header:last-child {
+            margin-bottom: 0;
+        }
+
+        .acordeon-body:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+}
+
+@include _1030 {
+    .faq {
+        .acordeon {
+
+            .acordeon-header {
+                font-size: 22px;
+                color: $white;
+                text-transform: uppercase;
+                padding: 1em 30px;
+            }
+
+            .acordeon-header::first-letter {
+                padding-right: 5px;
+            }
+
+            .acordeon-body {
+                padding: 0 0 15px 25px;
+            }
+        }
+
+    }
+}
+
+@include _580 {
+    .faq {
+        .container {
+            width: 100%;
+
+            .title {
+                padding-left: 5%;
+            }
+
+            .acordeon {
+                .acordeon-header {
+                    font-size: 24px;
+                    border-radius: 0;
+                }
+
+                .acordeon-body {
+                    padding: 0 0 15px 15px;
+                }
+            }
+        }
+
+    }
+}

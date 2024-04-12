@@ -1,0 +1,62 @@
+.providers {
+    .providers-items {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+        .provider-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            width: 130px;
+            height: 86px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.3);
+
+            img {
+                display: inline;
+            }
+        }
+    }
+}
+
+@include _1030 {
+    .providers {
+        .providers-items {
+            a {
+                width: 31%;
+                margin: 1%;
+                .provider-item {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+}
+
+@include _580 {
+    .providers {
+        .providers-items {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-top: 0;
+            a {
+                width: 49%;
+            }
+            .btn-provider {
+                width: 47%;
+            }
+        }
+    }
+}

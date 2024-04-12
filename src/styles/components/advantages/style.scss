@@ -1,0 +1,156 @@
+.advantages {
+    .inner-flex {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        .title {
+            margin: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .text {
+            width: 50%;
+
+            .list {
+                margin: 40px 0 !important;
+                color: $white;
+                font-size: 20px;
+
+                li {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    padding: 10px 10px 10px 0;
+
+                    svg {
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        .decor {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 50%;
+            padding-left: 35px;
+            border-left: 2px solid $white;
+
+            .buttons-wrap {
+                .btn {
+                    display: block;
+                    background-color: transparent;
+                }
+
+                .google-play {
+                    margin-top: 15px;
+                }
+            }
+
+            .device {
+                position: absolute;
+                right: -70px;
+                bottom: -60px;
+                height: 465px;
+                width: auto;
+            }
+
+        }
+    }
+}
+
+@include _1030 {
+    .advantages {
+        .inner-flex {
+            .text {
+                width: 100%;
+
+                .btn-link {
+                    margin: auto;
+                }
+            }
+
+            .decor {
+                width: 100%;
+                border-left: none;
+                padding-left: 0;
+                margin-top: 60px;
+
+                .buttons-wrap {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+
+                    .google-play {
+                        margin-top: 0;
+                        margin-left: 15px;
+                    }
+                }
+
+                .device {
+                    position: static;
+                    right: auto;
+                    bottom: auto;
+                    margin: auto;
+                    margin-top: 40px;
+                    height: 400px;
+                    width: 236px;
+                }
+
+            }
+        }
+    }
+}
+
+@include _580 {
+    .advantages {
+
+        .inner-flex {
+            .text {
+                text-align: center;
+
+                .title {
+                    text-align: left;
+                }
+
+                .list {
+                    text-align: left;
+                }
+
+                .btn-link {
+                    margin: auto !important;
+                    text-align: center;
+                }
+            }
+
+            .decor {
+                .device {
+                    width: 193px;
+                    height: 326px;
+                }
+
+            }
+        }
+    }
+}

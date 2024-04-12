@@ -1,0 +1,155 @@
+.payment-methods {
+    color: $white;
+    margin: auto;
+
+    .inner {
+
+        .payment-method.cap {
+            align-items: start;
+        }
+        .payment-method.row {
+            height: 86px;
+            p {
+                display: none;
+            }
+        }
+
+        .payment-method {
+            justify-content: space-between;
+            align-items: stretch;
+
+            div {
+                display: flex;
+                align-items: center;
+                padding: 0 13px;
+            }
+
+            .logo {
+                width: 15%;
+
+                img {
+                    margin: auto;
+                    width: auto;
+                    height: 51px;
+                }
+            }
+
+            .type {
+                width: 13%;
+            }
+
+            .country {
+                width: 11%;
+            }
+
+            .commission {
+                width: 16%;
+            }
+
+            .processing_time {
+                width: 13%;
+            }
+
+            .min_dep {
+                width: 13%;
+            }
+
+            .btn-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 19%;
+            }
+        }
+
+        
+        .payment-method:nth-child(2) {
+            div:first-child {
+                border-left: none;
+            }
+
+            div {
+                border-left: 1px solid $white;
+            }
+
+            .btn-box {
+                border-left: 1px solid $white;
+            }
+        }
+
+        .payment-method:nth-child(even) {
+            background: rgba(255, 255, 255, 0.18);
+        }
+    }
+}
+
+@include _1030 {
+    .payment-methods {
+    
+        .inner {
+    
+            .payment-method.cap {
+               display: none;
+            }
+            .payment-method.row {
+                height: auto;
+                margin: 30px 0;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    width: 45%;
+                    height: 50px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+            }
+    
+            .payment-method {
+                .logo {
+                    background: rgba(255, 255, 255, 0.18);
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 120px;
+                        height: 70px;
+                    }
+                }
+                .type {
+                    margin-top: 10px;
+                }
+                .type, .country, .commission, 
+                .processing_time, .min_dep, .btn-box {
+                    width: 100%;
+                }
+                .btn-box {
+                    margin-top: 30px;
+                }
+            }
+    
+            .payment-method:nth-child(2) {
+                div,.btn-box {
+                   border: none !important;
+                }
+            }
+    
+            .payment-method:nth-child(even) {
+                background: transparent;
+            }
+        }
+    }
+}
+
+@include _580 {
+    .payment-methods {
+        .container {
+            width: 100%;
+            .title {
+                padding: 0 5%;
+            }
+        }
+    }
+}

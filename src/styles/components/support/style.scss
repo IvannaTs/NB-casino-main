@@ -1,0 +1,57 @@
+.support {
+    .inner-flex {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        .text {
+            color: $white;
+            width: 50%;
+        }
+
+        .decor {
+            width: 45%;
+
+            img {
+                width: 445px;
+                height: 267px;
+            }
+        }
+    }
+}
+
+@include _1030 {
+    .support {
+        .inner-flex {
+
+            .text,
+            .decor {
+                width: 100%;
+            }
+
+            .decor {
+                margin-top: 20px;
+
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@include _580 {
+    .support {
+        .inner-flex {
+            .decor {
+                img {
+                    max-width: 350px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

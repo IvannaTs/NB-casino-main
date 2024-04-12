@@ -1,0 +1,73 @@
+.optional-information {
+    color: $white !important;
+
+    .paragraph:last-child {
+        margin-bottom: 0;
+    }
+
+    .paragraph:first-child {
+        margin-top: 0;
+    }
+
+    .inner-flex {
+        justify-content: space-between;
+        align-items: stretch;
+
+        .text {
+            width: 50%;
+
+            .list {
+                margin-block-start: 0;
+            }
+        }
+
+        .decor {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 45%;
+            padding-top: 200px;
+
+            img {
+                max-height: 260px;
+                width: 414px;
+                height: 262px;
+            }
+        }
+    }
+    .advant-disadvant-text {
+        justify-content: flex-start;
+        div {
+            width: 47%;
+        }
+    }
+}
+
+@include _1030 {
+    .optional-information {
+
+        .inner-flex {
+            justify-content: space-between;
+            align-items: stretch;
+
+            .text {
+                width: 100%;
+            }
+
+            .decor {
+                display: none;
+
+            }
+        }
+        .advant-disadvant-text {
+            div {
+                width: 100%;
+            }
+            div:nth-child(2) {
+                margin-top: 50px;
+            }
+        }
+    }
+}

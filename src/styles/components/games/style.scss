@@ -1,0 +1,152 @@
+.games {
+
+    .games-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+
+        .game-item {
+            @include Roboto-bold;
+            position: relative;
+            width: 210px;
+            height: 113px;
+            margin: 6px 7.5px;
+            transition: background linear 1.1s;
+
+            .game-name {
+                font-size: 21px;
+            }
+
+            .game-item-link {
+                display: none;
+                color: $dark-violet !important;
+                text-decoration: none;
+                text-align: center;
+
+                .play-now-text {
+                    font-size: 18px;
+                    margin-top: 15px;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+
+                    .icon {
+                        height: 30px;
+                        width: 30px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .game-item:hover {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: $white !important;
+
+            .game-item-link {
+                display: block;
+
+            }
+        }
+
+        .button-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+    }
+}
+
+@include _1030 {
+    .games {
+
+        .games-items {
+
+            .game-item {
+                width: 46%;
+                height: 137px;
+                margin: 2%;
+
+                .game-name {
+                    font-size: 23px;
+                }
+
+                .game-item-link {
+                    .play-now-text {
+                        font-size: 20px;
+
+                        .icon {
+                            height: 28px;
+                            width: 28px;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@include _580 {
+    .games {
+
+        .games-items {
+
+            .game-item {
+                width: 288px;
+                height: 155px;
+                margin: auto;
+                margin-bottom: 15px;
+
+                .game-name {
+                    font-size: 25px;
+                }
+
+                .game-item-link {
+                    .play-now-text {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            .game-item:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.app-info {
+    color: $white;
+
+    .btn {
+        display: block;
+        background-color: transparent;
+    }
+
+    .inner-flex {
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .text,
+        .decor {
+            width: 47%;
+        }
+
+        .text {
+            .buttons-wrap {
+                justify-content: flex-start;
+
+                .google-play {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include _1030 {
+    .app-info {
+        .inner-flex {
+            margin-top: 0;
+    
+            .text,
+            .decor {
+                width: 100%;
+            }
+            .decor {
+                img {
+                    margin: auto;
+                    margin-top: 30px;
+                    width: 236px;
+                    height: 400px;
+                }
+            }
+    
+            .text {
+                .buttons-wrap {
+    
+                    .google-play {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .inner-flex:nth-child(2) {
+            padding-top: 20px;
+            .text:nth-child(2) {
+                padding-top: 40px;
+            }
+        }
+    }
+}
+@include _468 {
+    .app-info {
+        .inner-flex {
+            margin-top: 0;
+    
+            .text {
+                .buttons-wrap {
+                    width: 300px;
+                    .google-play {
+                        margin-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .inner-flex:nth-child(2) {
+            padding-top: 20px;
+            .text:nth-child(2) {
+                padding-top: 40px;
+            }
+        }
+    }
+}

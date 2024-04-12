@@ -1,0 +1,302 @@
+.bonus-details {
+    color: $white;
+
+    .bonus-detail-items {
+
+        .bonus-detail-item.cap {
+            padding: 25px 0;
+        }
+
+        .bonus-detail-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 10px;
+            
+            .name,.bonuses,.spins,.more-info {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center;
+                height: 100%;
+            }
+            .bonuses,.spins,.more-info {
+                border-left: 2px solid $violet;
+                border-right: 2px solid $violet;
+            }
+            .name {
+                width: 20%;
+            }
+            .bonuses {  
+                width: 18%;
+            }
+
+            .rate {
+                width: 8%;
+            }
+
+            .spins {
+                width: 15%;
+            }
+
+            .more-info {
+                cursor: pointer;
+                width: 12%;
+                border-left: none;
+                img {
+                    margin: auto;
+                }
+            }
+
+            .get-game {
+                width: 26%;
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                .btn {
+                    width: auto;
+                    height: auto;
+                    padding: 10px 20px;
+                }
+            }
+
+        }
+
+        .accordeon-header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            height: 87px;
+            background: rgba(255, 255, 255, 0.18);
+
+            div {
+                padding: 0 10px;
+            }
+        }
+
+        .bonus-detail-item.row {
+            display: block;
+        }
+
+        .bonus-detail-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .accordeon-body {
+            text-align: left;
+            display: none;
+
+            .accordeon-body-content {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                padding: 20px 25px;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+
+                .content-title {
+                    width: 35%;
+                }
+
+                .content-description {
+                    width: 30%;
+                }
+            }
+
+            .accordeon-body-content:last-child {
+                border-bottom: none !important;
+            }
+        }
+
+        .accordeon-body.open {
+            display: block;
+        }
+
+        .accordeon-body-content.hidden-block_btn,
+        .accordeon-body-content.hidden-block_bonuses {
+            display: none;
+        }
+    }
+
+    .refresh-btn {
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@include _1030 {
+    .bonus-details {
+
+        .bonus-detail-items {
+
+            .bonus-detail-item {
+                
+                .rate {
+                    border-right: 2px solid $violet;
+                }
+                .spins {
+                    border: none;
+                }
+                .more-info {
+                    border-left: 2px solid $violet;
+                    border-right: none;
+                }
+                .name {
+                    width: 23%;
+
+                    img {
+                        width: auto;
+                        height: 46px;
+                    }
+                }
+
+                .bonuses {
+                    width: 25%;
+                }
+
+                .rate {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 13%;
+                }
+
+                .spins {
+                    width: 18%;
+                }
+
+                .more-info {
+                    width: 19%;
+                }
+
+                .get-game {
+                    display: none;
+                }
+
+            }
+
+            .accordeon-header {
+                height: 63px;
+                
+
+                div {
+                    padding: 0;
+                }
+            }
+
+            .accordeon-body {
+
+                .accordeon-body-content {
+                    .content-title {
+                        width: 55%;
+                    }
+
+                    .content-description {
+                        width: 45%;
+                    }
+                }
+
+            }
+
+            .accordeon-body.open {
+                display: block;
+            }
+
+            .accordeon-body-content.hidden-block_btn {
+                display: block;
+                margin: auto !important;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+        }
+
+    }
+}
+
+@include _580 {
+    .bonus-details {
+        .container {
+            width: 100%;
+            .title {
+                padding:0 5%;
+            }
+            .bonus-detail-items {
+
+                .bonus-detail-item {
+
+                    .name {
+                        width: 30%;
+                        padding: 10px 0;
+
+                        img {
+                            width: 90%;
+                            height: auto;
+                            max-height: 50px;
+                        }
+                    }
+
+                    .bonuses {
+                        display: none;
+                    }
+
+                    .rate {
+                        border-left: 2px solid $violet;
+                        width: 22%;
+                    }
+
+                    .spins {
+                        width: 25%;
+                    }
+
+                    .more-info {
+                        width: 23%;
+                    }
+                }
+
+                .accordeon-body-content.hidden-block_bonuses {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                }
+            }
+        }
+    }
+}

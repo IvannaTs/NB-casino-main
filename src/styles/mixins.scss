@@ -1,0 +1,297 @@
+@mixin Roboto-regular {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin Roboto-bold {
+    font-family: 'Roboto-bold';
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin Mariupol {
+    font-family: 'Mariupol';
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin h1-text {
+    @include Mariupol;
+    font-size: 133px;
+    line-height: 146px;
+    letter-spacing: 0.035em;
+
+    @include _1500 {
+        font-size: 95px;
+        line-height: 1;
+    }
+
+    @include _1030 {
+        font-size: 76px;
+    }
+
+    @include _580 {
+        font-size: 46px;
+    }
+
+}
+
+@mixin title-property {
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin h2-text {
+    @include Mariupol;
+    @include title-property;
+    font-size: 60px;
+
+    @include _1030 {
+        font-size: 40px;
+    }
+    @include _580 {
+        font-size: 34px;
+    }
+}
+
+@mixin h3-text {
+    @include Mariupol;
+    @include title-property;
+    font-size: 40px;
+    @include _1030 {
+        font-size: 34px;
+    }
+    @include _580 {
+        font-size: 28px;
+    }
+}
+
+@mixin h4-text {
+    @include Mariupol;
+    @include title-property;
+    font-size: 36px;
+    @include _1030 {
+        font-size: 32px;
+    }
+    @include _580 {
+        font-size: 28px;
+    }
+}
+
+@mixin p-text {
+    @include Roboto-regular;
+    font-size: 20px;
+    line-height: 160%;
+    @include _1030 {
+        font-size: 18px;
+    }
+}
+
+@mixin medium-text {
+    font-size: 30px;
+    line-height: 110%;
+
+    @include _580 {
+        font-size: 24px;
+    }
+
+    @include _480 {
+        font-size: 20px;
+    }
+}
+@mixin small-text {
+    font-size: 18px !important;
+    line-height: 120%;
+}
+
+@mixin paragraph {
+    margin: 100px 0;
+}
+
+@mixin button-property {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: $orange;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@mixin btn-large-property {
+    font-size: 35px;
+    line-height: 120%;
+    width: 300px;
+    height: 80px;
+
+    @include _1400 {
+        font-size: 30px;
+    }
+
+    @include _580 {
+        display: inline-block;
+        font-size: 28px;
+        width: auto;
+        height: auto;
+        padding: 20px 42px !important;
+    }
+    @include _580 {
+        display: inline-block;
+        font-size: 28px;
+        width: auto;
+        height: auto;
+        padding: 16px 22px !important;
+    }
+
+}
+
+@mixin btn-small-property {
+    font-size: 20px;
+    line-height: 110%;
+    width: 218px;
+    height: 55px;
+
+    @include _580 {
+        display: inline-block;
+        font-size: 24px;
+        width: auto;
+        height: auto;
+        padding: 20px 42px;
+    }
+}
+@mixin btn-smaller-property {
+    font-size: 20px;
+    line-height: 110%;
+    width: 146px;
+    height: 55px;
+}
+
+@mixin _1500 {
+    @media (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin _1400 {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin _1030 {
+    @media (max-width: 1030px) {
+        @content;
+    }
+}
+
+@mixin _860 {
+    @media (max-width: 860px) {
+        @content;
+    }
+}
+@mixin _760 {
+    @media (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin _580 {
+    @media (max-width: 580px) {
+        @content;
+    }
+}
+
+@mixin _480 {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin _468 {
+    @media (max-width: 468px) {
+        @content;
+    }
+}
+@mixin _380 {
+    @media (max-width: 468px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin _1800 {
+    @media (max-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin _1440 {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin _1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin _1024 {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin _991 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin _768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _650 {
+    @media (max-width: 650px) {
+        @content;
+    }
+}
+
+@mixin _468 {
+    @media (max-width: 468px) {
+        @content;
+    }
+}

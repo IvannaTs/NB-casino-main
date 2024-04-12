@@ -1,0 +1,146 @@
+.footer {
+    overflow: hidden;
+    background-color: $dark-violet;
+
+    .footer-inner {
+        .partners-logo-group {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0;
+
+            .logo-wrap {
+                margin: 5px 6px;
+            }
+
+            .logo-icon {
+                width: auto;
+                height: 51px;
+                transition: $transition-property;
+            }
+
+            .main-logo {
+                width: 158px !important;
+                height: 75px !important;
+                position: absolute;
+                left: 6%;
+            }
+
+            .logo-icon__color {
+                display: none;
+            }
+
+            .logo-icon__bw {
+                display: block;
+            }
+
+            .logo-wrap:hover {
+                .logo-icon__color {
+                    display: block;
+                }
+
+                .logo-icon__bw {
+                    display: none;
+                }
+            }
+
+        }
+
+        .decor-block {
+            padding: 5px 0;
+            border-top: 2px solid rgba(255, 255, 255, 0.26);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+
+            .partners-logo-group {
+                max-width: 920px;
+                margin: auto;
+            }
+        }
+
+        .disclaimer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.26);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                @include Roboto-bold;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@include _1400 {
+    .footer {
+        .footer-inner {
+            .partners-logo-group {
+                .main-logo {
+                    position: static;
+                    margin-right: 60px;
+                    left: auto;
+                }
+    
+            }
+        }
+    } 
+}
+@include _1200 {
+    .footer {
+        .footer-inner {
+            .partners-logo-group {
+                max-width: 800px;
+                margin: auto;
+            }
+        }
+    } 
+}
+
+@include _1030 {
+    .footer {
+        .footer-inner {
+            
+            .partners-logo-group {
+                width: 90%;
+                margin: auto;
+                padding: 7.5px;
+
+                .logo-wrap {
+                    margin: 5px;
+                }
+
+                .logo-icon {
+                    height: 35px;
+                }
+
+                .main-logo {
+                    display: none;
+                }
+            }
+            .partners-logo-group.inner-flex {
+                flex-wrap: nowrap;
+            }
+
+            .decor-block {
+                .partners-logo-group {
+                    max-width: 670px;
+                    margin: auto;
+                }
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include _860 {
+    .footer {
+        .footer-inner {
+            .partners-logo-group.row_3 {
+                max-width: 55%;
+            }
+        }
+    } 
+}

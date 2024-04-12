@@ -1,0 +1,145 @@
+.intro {
+    margin-top: 109px !important;
+    min-height: 53vh;
+    padding: 140px 0 120px;
+    background: url('/img/intro/intro-bg.webp') no-repeat right -3rem top 5rem/auto 65%;
+    background-position: right bottom;
+    background-blend-mode: normal, screen;
+    background-repeat: no-repeat;
+    color: $white;
+
+    .container {
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+
+        .intro-title {
+            .title-text {
+                text-transform: uppercase;
+                margin: 0 0 30px !important;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+                max-width: 85%;
+            }
+        }
+
+        .intro-subtitle {
+            margin-bottom: 40px !important;
+
+            .subtitle-text {
+                font-size: 30px;
+                line-height: 1.2;
+                text-align: left;
+                text-transform: lowercase;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            }
+
+            .subtitle-text:first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@include _1500 {
+    .intro {
+        background-size: 810px;
+
+        .container {
+
+            .intro-title {
+                .title-text {
+                    max-width: 85%;
+                }
+            }
+
+            .intro-subtitle {
+
+                .subtitle-text {
+                    font-size: 25px;
+                }
+
+            }
+        }
+    }
+}
+
+@include _1200 {
+    .intro {
+        background-size: 720px;
+    }
+}
+
+@include _1030 {
+    .intro {
+        background-size: 620px;
+        padding: 90px 0 60px;
+
+        .container {
+            width: 550px;
+            margin: 0 50px !important;
+
+            .intro-title {
+                .title-text {
+                    max-width: 85%;
+                }
+            }
+
+            .intro-subtitle {
+                margin-bottom: 80px !important;
+
+                .subtitle-text {
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+
+            }
+        }
+    }
+}
+
+@include _760 {
+    .intro {
+        background: url('/img/intro/bg-img-small.webp') no-repeat;
+        background-size: auto;
+        background-position: center;
+        background-position: bottom right;
+        min-height: 820px !important;
+
+        .container {
+            position: relative;
+            z-index: 3;
+            width: 400px;
+            margin: 0 25px !important;
+        }
+    }
+
+}
+
+@include _580 {
+    .intro {
+        margin-top: 60px !important;
+        padding-top: 80px;
+        min-height: 710px !important;
+
+        .container {
+            .intro-title {
+
+                .title-text {
+                    max-width: 320px;
+                    margin: 0 0 40px !important;
+                }
+
+            }
+
+            .intro-subtitle {
+                margin-bottom: 50px !important;
+            }
+        }
+    }
+}
+
+@include _468 {
+    .intro {
+        background-size: 330px;
+    }
+}
